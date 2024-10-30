@@ -138,7 +138,7 @@ const projects = ({ id }) => {
               >
                 Github
               </a>
-              <a className={styles.logo} href="https://maxicoletti.vercel.app/">
+              <a className={styles.logo} href="https://portfolio-maxico1s-projects.vercel.app/">
                 Vercel
               </a>
             </div>
