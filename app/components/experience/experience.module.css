@@ -1,0 +1,9 @@
+.container{
+    background-color: #ebebeb;
+}
+.container p{
+    font-size: 50px;
+    transform:rotate(-40deg);
+    height: 90%;
+    text-align: center;
+}

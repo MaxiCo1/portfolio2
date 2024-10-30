@@ -1,0 +1,65 @@
+.container {
+  position: fixed;
+  top: 35%;
+  right: 15px;
+  height: 20vh;
+}
+
+.container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container ul li {
+  border: 3px solid #cc005f;
+  margin: 20px;
+  padding: 2%;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  position: relative;
+}
+
+.container ul li::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #cc005f;
+  width: 3px;
+  height: 23px;
+  z-index: -1;
+}
+
+.container ul li:last-child::before {
+  display: none;
+}
+
+.linkp {
+  position: absolute;
+  right: 25px;
+  top: -6px;
+  color: #cc005f;
+  width: 100px;
+  opacity: .6;
+}
+.container ul li:hover {
+  font-size: 18px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+}
+
+.container ul li.active {
+  font-size: 18px; 
+  font-weight: bold; 
+  color: crimson; 
+  transition: all 0.3s ease; 
+  background-color: #cc005f;
+
+}
+.container ul li.active p {
+  opacity: 1;
+}

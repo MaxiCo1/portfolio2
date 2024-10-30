@@ -1,0 +1,102 @@
+.container {
+  background-image: url("../../../public/images/background.jpg");
+  background-position: center;
+  background-repeat: no repeat;
+  background-size: contain;
+  margin-top: 0%;
+}
+.container p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.allProjectsContainer {
+  columns: 2;
+  gap: 0px;
+  width: 60%;
+}
+.projectLargeContainer {
+  position: relative;
+  height: 80vh;
+}
+.projectContainer {
+  position: relative;
+  height: 50vh;
+}
+.comingSoonContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: rgb(50, 50, 50);
+}
+
+.insideContainer h3 {
+  padding: 2% 0 2%;
+  font-size: 25px;
+}
+.insideContainer p {
+  padding: 2% 0 2%;
+  width: 80%;
+  text-align: center;
+  font-size: 18px;
+}
+.sectionDescription{
+  width: 60%;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.imageContainer {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  .centeredImage {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+ 
+  .hiddenContent {
+    display: none; 
+  }
+  
+
+  .hoverContainer:hover .hiddenContent {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1; 
+  }
+  
+  .logoContainer {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .logo {
+    color: black;
+    border: 2px solid white;
+    background-color: white;
+    padding: 10px 15px;
+    margin: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .logo:hover {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+  }

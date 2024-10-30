@@ -1,0 +1,27 @@
+.footerContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    background-color: black;
+}
+.footerContainer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+}
+.footerContainer div h3{
+    font-size: 25px;
+    color: #cc005f;
+    text-align: center;
+    padding-top: 5%;
+}
+.footerContainer div p{
+    font-size: 16px;
+    color: #888888;
+    text-align: center;
+    padding-top: 2%;
+
+}
