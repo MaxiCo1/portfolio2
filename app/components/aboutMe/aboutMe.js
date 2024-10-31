@@ -108,12 +108,12 @@ const aboutMe = ({ id }) => {
         </div>
       </div>
       <div className={styles.btnContainer}>
-        <button className={`${styles.btn} ${styles.btnEnglish}`}>
+        <a className={`${styles.btn} ${styles.btnEnglish}`} download href="./cv/CV Maxi Coletti ENG.pdf">
           Download English CV
-        </button>
-        <button className={`${styles.btn} ${styles.btnSpanish}`}>
+        </a>
+        <a className={`${styles.btn} ${styles.btnSpanish}`} download href="./cv/CV Maxi coletti.pdf">
           Descargar CV en Español
-        </button>
+        </a>
       </div>
     </section>
   );
