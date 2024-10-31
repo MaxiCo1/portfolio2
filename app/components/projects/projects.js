@@ -105,7 +105,7 @@ const projects = ({ id }) => {
             <div className={styles.logoContainer}>
               <a
                 className={styles.logo}
-                href="https://github.com/cdejtiar/runnerDinoUnity.git"
+                href="https://github.com/MaxiCo1/portfolio2.git"
               >
                 Github
               </a>
