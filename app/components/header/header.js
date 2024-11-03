@@ -1,18 +1,28 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./header.module.css";
 import { useLanguage } from "@/app/context/LanguageContext";
 
-const header = ({ id, button }) => {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+const Header = ({ id, button }) => {
   const { language, toggleLanguage } = useLanguage();
-  return (
-    <section className={styles.Container} id={id}>
-      <div>
-      </div>
+  const [animationKey, setAnimationKey] = useState(0);
 
+  useEffect(() => {
+    setAnimationKey((prevKey) => prevKey + 1);
+
+    const interval = setInterval(() => {
+      setAnimationKey((prevKey) => prevKey + 1);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [language]);
+
+  return (
+    <header className={styles.Container} id={id}>
       <h2>{language === "en" ? "HELLO WORLD" : "HOLA MUNDO"}</h2>
-      <h1>{language === "en" ? "i´m Maxi Coletti" : "Soy Maxi Coletti"}</h1>
+      <h1 key={animationKey}>
+        {language === "en" ? "I'am Maxi Coletti" : "Soy Maxi Coletti"}
+      </h1>
       <p>
         {language === "en" ? "Frontend Developer" : "Desarrollador Frontend"}
       </p>
@@ -22,10 +32,10 @@ const header = ({ id, button }) => {
         </a>
       </button>
       <p onClick={toggleLanguage} className={styles.language}>
-          {language === "es" ? "English" : "Español"}
-        </p>
-    </section>
+        {language === "es" ? "English" : "Español"}
+      </p>
+    </header>
   );
 };
 
-export default header;
+export default Header;

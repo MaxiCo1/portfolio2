@@ -5,13 +5,13 @@
   height: 20vh;
 }
 
-.container ul {
+.desk {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.container ul li {
+.desk li {
   border: 3px solid #cc005f;
   margin: 20px;
   padding: 2%;
@@ -21,7 +21,7 @@
   position: relative;
 }
 
-.container ul li::before {
+.desk li::before {
   content: "";
   position: absolute;
   top: 100%;
@@ -33,7 +33,7 @@
   z-index: -1;
 }
 
-.container ul li:last-child::before {
+.desk li:last-child::before {
   display: none;
 }
 
@@ -43,23 +43,39 @@
   top: -6px;
   color: #cc005f;
   width: 100px;
-  opacity: .6;
+  opacity: 0.6;
 }
-.container ul li:hover {
+.desk li:hover {
   font-size: 18px;
   transition: all 0.3s ease;
   cursor: pointer;
-
 }
 
-.container ul li.active {
-  font-size: 18px; 
-  font-weight: bold; 
-  color: crimson; 
-  transition: all 0.3s ease; 
+.desk li.active {
+  font-size: 18px;
+  font-weight: bold;
+  color: crimson;
+  transition: all 0.3s ease;
   background-color: #cc005f;
-
 }
-.container ul li.active p {
+.desk li.active p {
   opacity: 1;
+}
+.hideMobile {
+  display: none;
+}
+
+.menuToggle input:checked~ul{
+  display: block;
+}
+.menu{
+  display: none
+}
+
+
+
+@media (max-width: 400px) {
+  .desk {
+    display: none;
+  }
 }

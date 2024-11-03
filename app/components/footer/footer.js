@@ -17,17 +17,17 @@ const footer = ({ id }) => {
           alt="linkedin"
         />
         <h3>{language === "en" ? "Find me at" : "Encuéntrame en"}</h3>
-        <p>www.linkedin.com/in/maximiliano-coletti</p>
+        <a href="https://linkedin.com/in/maximiliano-coletti">www.linkedin.com/in/maximiliano-coletti</a>
       </div>
       <div>
         <Image src={"/images/email.png"} width={50} height={50} alt="email" />
         <h3>{language === "en" ? "Email me at" : "Envíeme un mail a"}</h3>
-        <p>coletti.maxi@gmail.com</p>
+        <a href="mailto:coletti.maxi@gmail.com">coletti.maxi@gmail.com</a>
       </div>
       <div>
         <Image src={"/images/phone.png"} width={50} height={50} alt="phone" />
         <h3>{language === "en" ? "Call me at" : "Llámame al"}</h3>
-        <p>+54 9 11 3888 2644</p>
+        <a href="tel:+5491138882644">+54 9 11 3888 2644</a>
       </div>
     </footer>
   );

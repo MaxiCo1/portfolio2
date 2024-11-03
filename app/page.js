@@ -6,6 +6,7 @@ import Projects from "./components/projects";
 import Education from "./components/education";
 import Experience from "./components/experience";
 import Footer from "./components/footer";
+import NavBarMobile from "./components/navBarMobile";
 
 const ids = {
   home: "home",
@@ -20,6 +21,7 @@ export default function Home() {
   return (
     <main className={styles.globalFont}>
       <NavBar sections={ids} />
+      <NavBarMobile/>
       <Header id={ids.home} button={ids.about}/>
       <AboutMe id={ids.about} />
       <Education id={ids.education} />

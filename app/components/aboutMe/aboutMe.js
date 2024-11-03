@@ -51,22 +51,30 @@ const aboutMe = ({ id }) => {
                   href="https://linkedin.com/in/maximiliano-coletti"
                   passHref={true}
                 >
-                  linkedin.com/in/maximiliano-coletti
+                  linkedin.com/in/ maximiliano-coletti
                 </Link>
               </span>
             </li>
             <li>
               <h4>Mail:</h4>
-              <span>coletti.maxi@gmail.com</span>
+              <span>
+                <Link href="mailto:coletti.maxi@gmail.com" passHref={true}>
+                  coletti.maxi@gmail.com
+                </Link>
+              </span>
             </li>
             <li>
               <h4>{language === "en" ? "Phone:" : "Celular:"}</h4>
 
-              <span>+54 11 3888 2644</span>
+              <span>
+                <Link href="tel:+54 11 3888 2644" passHref={true}>
+                  +54 11 3888 2644
+                </Link>
+              </span>
             </li>
           </ul>
         </div>
-        <div className={styles.skillsContainer}>
+        <div className={styles.infoContainer}>
           <h3 className={globalStyles.subtitle}>
             {language === "en" ? "Main skills:" : "Habilidades principales:"}
           </h3>
@@ -108,10 +116,18 @@ const aboutMe = ({ id }) => {
         </div>
       </div>
       <div className={styles.btnContainer}>
-        <a className={`${styles.btn} ${styles.btnEnglish}`} download href="./cv/CV Maxi Coletti ENG.pdf">
+        <a
+          className={`${styles.btn} ${styles.btnEnglish}`}
+          download
+          href="./cv/CV Maxi Coletti ENG.pdf"
+        >
           Download English CV
         </a>
-        <a className={`${styles.btn} ${styles.btnSpanish}`} download href="./cv/CV Maxi coletti.pdf">
+        <a
+          className={`${styles.btn} ${styles.btnSpanish}`}
+          download
+          href="./cv/CV Maxi coletti.pdf"
+        >
           Descargar CV en Español
         </a>
       </div>

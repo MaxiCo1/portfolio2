@@ -10,9 +10,9 @@ const NavBar = ({ sections }) => {
 
   useEffect(() => {
     const sectionIds = Object.values(sections);
-    const observerOptions = { 
+    const observerOptions = {
       threshold: 0.3,
-      rootMargin: "0px 0px -30% 0px" 
+      rootMargin: "0px 0px -30% 0px",
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -41,43 +41,60 @@ const NavBar = ({ sections }) => {
 
   return (
     <nav className={styles.container}>
-      <ul>
+      <ul className={styles.desk}>
         <li
           onClick={() => handleScroll(sections.home)}
           className={activeSection === sections.home ? styles.active : ""}
         >
-          <p className={styles.linkp}>{language === "en" ? "Home" : "Inicio"}</p>
-          
+          <p className={styles.linkp}>
+            {language === "en" ? "Home" : "Inicio"}
+          </p>
         </li>
         <li
           onClick={() => handleScroll(sections.about)}
           className={`${activeSection === sections.about ? styles.active : ""}`}
         >
-          <p className={styles.linkp}>{language === "en" ? "About me" : "Sobre mí"}</p>
+          <p className={styles.linkp}>
+            {language === "en" ? "About me" : "Sobre mí"}
+          </p>
         </li>
         <li
           onClick={() => handleScroll(sections.education)}
-          className={`${activeSection === sections.education ? styles.active : ""}`}
+          className={`${
+            activeSection === sections.education ? styles.active : ""
+          }`}
         >
-          <p className={styles.linkp}>{language === "en" ? "Education" : "Educación"}</p>
+          <p className={styles.linkp}>
+            {language === "en" ? "Education" : "Educación"}
+          </p>
         </li>
         <li
           onClick={() => handleScroll(sections.experience)}
-          className={`${activeSection === sections.experience ? styles.active : ""}`}
+          className={`${
+            activeSection === sections.experience ? styles.active : ""
+          }`}
         >
-          <p className={styles.linkp}>{language === "en" ? "Experience" : "Experiencia"}</p>
+          <p className={styles.linkp}>
+            {language === "en" ? "Experience" : "Experiencia"}
+          </p>
         </li>
         <li
           onClick={() => handleScroll(sections.projects)}
-          className={`${activeSection === sections.projects ? styles.active : ""}`}
+          className={`${
+            activeSection === sections.projects ? styles.active : ""
+          }`}
         >
           <p className={styles.linkp}>Portfolio</p>
         </li>
         <li
           onClick={() => handleScroll(sections.contact)}
-          className={`${activeSection === sections.contact ? styles.active : ""}`}
+          className={`${
+            activeSection === sections.contact ? styles.active : ""
+          }`}
         >
-          <p className={styles.linkp}>{language === "en" ? "Contact" : "Contacto"}</p>
+          <p className={styles.linkp}>
+            {language === "en" ? "Contact" : "Contacto"}
+          </p>
         </li>
       </ul>
     </nav>

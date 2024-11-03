@@ -10,16 +10,22 @@ const experiencia = ({ id }) => {
   const { language } = useLanguage();
   return (
     <section
-      className={`${globalStyles.container} ${styles.container}`}
+      className={styles.container}
       id={id}
     >
-      <h2 className={globalStyles.title}>{language === "en" ? "Work Experience" : "Experiencia laboral"}</h2>
-      <Image
-        src={"/images/comingSoon.png"}
-        height={500}
-        width={500}
-        alt="coming soon"
-      />
+      <h2 className={globalStyles.title}>
+        {language === "en" ? "Work Experience" : "Experiencia laboral"}
+      </h2>
+      <div>
+        <p>COMING</p>
+        <Image
+          src={"/images/loading.gif"}
+          height={150}
+          width={150}
+          alt="coming soon"
+        />
+        <p>SOON</p>
+      </div>
     </section>
   );
 };

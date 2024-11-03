@@ -138,7 +138,10 @@ const projects = ({ id }) => {
               >
                 Github
               </a>
-              <a className={styles.logo} href="https://portfolio-maxico1s-projects.vercel.app/">
+              <a
+                className={styles.logo}
+                href="https://portfolio-maxico1s-projects.vercel.app/"
+              >
                 Vercel
               </a>
             </div>
@@ -173,12 +176,14 @@ const projects = ({ id }) => {
         </div>
 
         <div className={styles.comingSoonContainer}>
+          <p>COMING</p>
           <Image
-            src={"/images/comingSoonWhite.png"}
-            alt="comingSoon"
-            width={200}
-            height={200}
+            src={"/images/loading.gif"}
+            height={150}
+            width={150}
+            alt="coming soon"
           />
+          <p>SOON</p>
         </div>
       </div>
     </section>

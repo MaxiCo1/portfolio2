@@ -18,10 +18,27 @@
     text-align: center;
     padding-top: 5%;
 }
-.footerContainer div p{
+.footerContainer div a{
     font-size: 16px;
     color: #888888;
     text-align: center;
     padding-top: 2%;
+
+}
+
+@media (max-width: 400px) {
+    .footerContainer div h3{
+        font-size: 18px;
+    }
+    .footerContainer div a{
+        font-size: 14px;
+    }
+    .footerContainer div{
+        width: 100%;
+    }
+    .footerContainer{
+        flex-direction: column;
+        height: 70vh;
+    }
 
 }

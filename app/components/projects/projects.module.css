@@ -6,7 +6,7 @@
   margin-top: 0%;
 }
 .container p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .allProjectsContainer {
   columns: 2;
@@ -28,6 +28,14 @@
   align-items: center;
   height: 80vh;
   background-color: rgb(50, 50, 50);
+  flex-direction: column;
+}
+.comingSoonContainer p {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  padding: 2%;
 }
 
 .insideContainer h3 {
@@ -40,63 +48,85 @@
   text-align: center;
   font-size: 18px;
 }
-.sectionDescription{
+.sectionDescription {
   width: 60%;
   text-align: center;
   margin-bottom: 3%;
 }
 
 .imageContainer {
-    position: relative;
-    overflow: hidden;
-    height: 100%;
-  }
-  
-  .centeredImage {
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-    height: 100%;
-  }
-  
- 
-  .hiddenContent {
-    display: none; 
-  }
-  
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
 
-  .hoverContainer:hover .hiddenContent {
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 1; 
+.centeredImage {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.hiddenContent {
+  display: none;
+}
+
+.hoverContainer:hover .hiddenContent {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  color: black;
+  border: 2px solid white;
+  background-color: white;
+  padding: 10px 15px;
+  margin: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.logo:hover {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+@media (max-width: 400px) {
+  .sectionDescription {
+  width: 90%;
   }
-  
-  .logoContainer {
-    display: flex;
-    justify-content: space-around;
+  .allProjectsContainer{
+    columns:1;
+    width: 90%;
   }
-  
-  .logo {
-    color: black;
-    border: 2px solid white;
-    background-color: white;
-    padding: 10px 15px;
-    margin: 15px;
-    border-radius: 5px;
-    font-weight: bold;
+  .projectLargeContainer, .comingSoonContainer{
+    height: 50vh;
   }
-  
-  .logo:hover {
-    background-color: transparent;
-    color: white;
-    border: 2px solid white;
+  .insideContainer h3{
+    font-size: 16px;
   }
+  .insideContainer p {
+    font-size: 14px;
+    text-align: justify;
+  }
+  .logoContainer a{
+    margin: 6px;
+    padding: 8px 12px;
+  }
+}
