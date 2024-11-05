@@ -10,7 +10,7 @@ const aboutMe = ({ id }) => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const { language } = useLanguage();
   return (
-    <section className={globalStyles.container} id={id}>
+    <section className={`${globalStyles.container} ${styles.containerBackground}`} id={id}>
       <h2 className={globalStyles.title}>
         {language === "en" ? "About me" : "Sobre mí"}
       </h2>
