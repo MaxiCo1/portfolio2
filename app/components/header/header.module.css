@@ -73,7 +73,7 @@
   cursor: pointer;
 }
 
-@media (max-width:431px)  {
+@media (max-width:501px)  {
   .Container h1{
     font-size: 32px;
   }

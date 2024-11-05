@@ -107,7 +107,7 @@
   border: 2px solid white;
 }
 
-@media (max-width: 431px) {
+@media (max-width: 501px) {
   .sectionDescription {
   width: 90%;
   }
