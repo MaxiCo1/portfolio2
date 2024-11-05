@@ -30,7 +30,7 @@
   color: black;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 431px) {
   .mainContainer {
     width: 90%;
   }
