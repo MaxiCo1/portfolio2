@@ -85,6 +85,7 @@ const projects = ({ id }) => {
             </div>
           </div>
         </div>
+
         <div className={`${styles.projectContainer} ${styles.hoverContainer}`}>
           <div className={styles.imageContainer}>
             <Image
@@ -106,6 +107,34 @@ const projects = ({ id }) => {
               <a
                 className={styles.logo}
                 href="https://github.com/MaxiCo1/portfolio2.git"
+              >
+                Github
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className={`${styles.projectContainer} ${styles.hoverContainer}`}>
+          <div className={styles.imageContainer}>
+            <Image
+              src="/images/runner.png"
+              alt="runner"
+              width={800}
+              height={600}
+              className={styles.centeredImage}
+            />
+          </div>
+          <div className={`${styles.insideContainer} ${styles.hiddenContent}`}>
+            <h3>{language === "en" ? "Runner Game" : "Juego de correr"}</h3>
+            <p>
+              {language === "en"
+                ? "During this project, a friend and I programmed a runner game in C# using Unity. The player constantly runs on an endless map where they can only jump to avoid spikes. There are two possible power-ups: invincibility and healing."
+                : "Durante este proyecto, junto a una amiga, programamos un juego de correr en C# usando Unity. El jugador corre constantemente en un mapa infinito donde solo puede saltar para evitar pinches. Hay dos posibles potenciadores: invencibilidad y curación."}
+            </p>
+            <div className={styles.logoContainer}>
+              <a
+                className={styles.logo}
+                href="https://github.com/cdejtiar/runnerDinoUnity.git"
               >
                 Github
               </a>
@@ -147,27 +176,29 @@ const projects = ({ id }) => {
             </div>
           </div>
         </div>
-        <div className={`${styles.projectContainer} ${styles.hoverContainer}`}>
+        <div
+          className={`${styles.projectLargeContainer} ${styles.hoverContainer}`}
+        >
           <div className={styles.imageContainer}>
             <Image
-              src="/images/runner.png"
-              alt="runner"
+              src="/images/twitter-clone.jpg"
+              alt="socialNetwork"
               width={800}
               height={600}
               className={styles.centeredImage}
             />
           </div>
           <div className={`${styles.insideContainer} ${styles.hiddenContent}`}>
-            <h3>{language === "en" ? "Runner Game" : "Juego de correr"}</h3>
+            <h3>Social Network</h3>
             <p>
               {language === "en"
-                ? "During this project, a friend and I programmed a runner game in C# using Unity. The player constantly runs on an endless map where they can only jump to avoid spikes. There are two possible power-ups: invincibility and healing."
-                : "Durante este proyecto, junto a una amiga, programamos un juego de correr en C# usando Unity. El jugador corre constantemente en un mapa infinito donde solo puede saltar para evitar pinches. Hay dos posibles potenciadores: invencibilidad y curación."}
+                ? "Throughout this project, developed during the Next.js unit of the Frontend Certificate course at Digital House, I created a social network similar to Twitter/X using a backend specifically provided for this unit. In this project, I learned to make effective API calls, implementing GET and POST methods that enable users to interact with the interface in a smooth and realistic manner.The features developed include user login, user registration, posting messages, replying to messages, and logging out. Additionally, I used temporary cookies to manage login verification and user creation, ensuring secure and efficient session handling."
+                : "A lo largo de este proyecto, desarrollado en la unidad de Next.js del curso de Certificado Frontend de Digital House, creé una red social similar a Twitter/X, utilizando un backend proporcionado específicamente para la unidad. En este proyecto, aprendí a realizar llamados a la API de manera efectiva, implementando métodos GET y POST que permiten al usuario interactuar con la interfaz de una forma fluida y realista. Las funcionalidades desarrolladas incluyen inicio de sesión, registro de usuario, publicación de mensajes, respuesta a mensajes y cierre de sesión. Además, utilicé cookies temporales para gestionar la verificación de inicio de sesión y la creación de usuarios, garantizando un manejo seguro y eficiente de las sesiones. "}
             </p>
             <div className={styles.logoContainer}>
               <a
                 className={styles.logo}
-                href="https://github.com/cdejtiar/runnerDinoUnity.git"
+                href="https://github.com/MaxiCo1/Social-Network.git"
               >
                 Github
               </a>
