@@ -37,6 +37,11 @@ const HamburgerMenu = () => {
           </Link>
         </li>
         <li>
+          <Link href="#allSkills" onClick={toggleMenu}>
+            {language === "en" ? "Skills" : "Habilidades"}
+          </Link>
+        </li>
+        <li>
           <Link href="#experience" onClick={toggleMenu}>
             {language === "en" ? "Experience" : "Experiencia"}
           </Link>

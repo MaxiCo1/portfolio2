@@ -69,6 +69,16 @@ const NavBar = ({ sections }) => {
           </p>
         </li>
         <li
+          onClick={() => handleScroll(sections.allSkills)}
+          className={`${
+            activeSection === sections.allSkills ? styles.active : ""
+          }`}
+        >
+          <p className={styles.linkp}>
+            {language === "en" ? "Skills" : "Habilidades"}
+          </p>
+        </li>
+        <li
           onClick={() => handleScroll(sections.experience)}
           className={`${
             activeSection === sections.experience ? styles.active : ""
