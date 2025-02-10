@@ -8,6 +8,7 @@ import AllSkills from "./components/allSkills";
 import Experience from "./components/experience";
 import Footer from "./components/footer";
 import NavBarMobile from "./components/navBarMobile";
+import Head from "next/head";
 
 const ids = {
   home: "home",
@@ -22,6 +23,10 @@ const ids = {
 export default function Home() {
   return (
     <main className={styles.globalFont}>
+      <Head>
+        <title>Maxi Coletti - Portfolio</title>
+        <meta name="description" content="Maxi Coletti - Personal portfolio" />
+      </Head>
       <NavBar sections={ids} />
       <NavBarMobile/>
       <Header id={ids.home} button={ids.about}/>

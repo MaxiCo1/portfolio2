@@ -10,7 +10,10 @@ const aboutMe = ({ id }) => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const { language } = useLanguage();
   return (
-    <section className={`${globalStyles.container} ${styles.containerBackground}`} id={id}>
+    <section
+      className={`${globalStyles.container} ${styles.containerBackground}`}
+      id={id}
+    >
       <h2 className={globalStyles.title}>
         {language === "en" ? "About me" : "Sobre mí"}
       </h2>
@@ -23,9 +26,31 @@ const aboutMe = ({ id }) => {
           style={{ borderRadius: "10%" }}
         />
         <p className={globalStyles.text}>
-          {language === "en"
-            ? "I am a graduate in Multimedia Technology, seeking employment as a frontend developer. I am eager to use my skills and knowledge to contribute to the company´s growth and to develop as a professional."
-            : "Soy graduado en Tecnología Multimedia y estoy en busca de empleo como desarrollador frontend. Estoy listo para utilizar mis habilidades y conocimientos para contribuir al crecimiento de la empresa y desarrollarme como profesional."}
+          {language === "en" ? (
+            <>
+              I&apos;m a <b>Multimedia Technology</b> graduate with a focus on{" "}
+              <b>frontend development</b> and a passion for creating{" "}
+              <b>intuitive</b> and <b>functional digital experiences</b>. I have
+              expertise in technologies such as <b>React</b>, <b>Next.js</b>,
+              and knowledge in <b>UI/UX design</b>. I&apos;m seeking my first
+              job opportunity to apply my <b>skills</b>, learn from{" "}
+              <b>dynamic teams</b>, and contribute with{" "}
+              <b>innovative solutions</b>. I&apos;m committed to{" "}
+              <b>continuous learning</b> and <b>professional growth</b>.
+            </>
+          ) : (
+            <>
+              Soy un graduado en <b>Tecnología Multimedial</b> con un fuerte
+              enfoque en <b>desarrollo frontend</b>. Apasionado por la creación
+              de <b>experiencias digitales intuitivas</b> y <b>funcionales</b>,
+              domino tecnologías como <b>React</b>, <b>Next.js</b>, y{" "}
+              <b>diseño UI/UX</b>. Busco mi primera oportunidad laboral para
+              aplicar mis <b>conocimientos</b> en <b>entornos dinámicos</b>,
+              aprender de <b>grandes equipos</b> y aportar{" "}
+              <b>soluciones innovadoras</b>. Comprometido con el{" "}
+              <b>aprendizaje continuo</b> y el <b>crecimiento profesional</b>.
+            </>
+          )}
         </p>
       </div>
       <div className={styles.lowerContainer}>
@@ -38,11 +63,6 @@ const aboutMe = ({ id }) => {
               <h4>{language === "en" ? "Full name:" : "Nombre completo:"}</h4>
 
               <span>Maximiliano Esteban Coletti</span>
-            </li>
-            <li>
-              <h4>{language === "en" ? "Age:" : "Edad:"}</h4>
-
-              <span>23</span>
             </li>
             <li>
               <h4>LinkedIn:</h4>

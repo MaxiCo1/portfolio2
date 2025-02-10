@@ -31,11 +31,18 @@ const education = ({ id }) => {
           </div>
           <div>
             <h4>Digital House</h4>
-            <p className={globalStyles.text}>
-              {language === "en"
-                ? "This year I started with this certificate to improve my skills and acquire new ones such as Redux, Typescript, MySQL, PowerBI and Styled components, among others"
-                : "Este año comencé con este certificado para mejorar mis habilidades y adquirir nuevas como Redux, Typescript, MySQL, PowerBI y Styled components, entre otros."}
-            </p>
+            <ul>
+              <li className={globalStyles.text}>
+                {language === "en"
+                  ? "This year, I began this certificate program to enhance my existing Frontend skills."
+                  : "Este año, comencé este certificado para mejorar mis habilidades actuales como frontend."}
+              </li>
+              <li className={globalStyles.text}>
+                {language === "en"
+                  ? <>I aimed to acquire new skills, such as <b>Redux</b>, <b>TypeScript</b>, <b>MySQL</b>, <b>Power BI</b>, and <b>Styled Components</b>, among other technologies.</>
+                  : <>Mi objetivo es adquirir nuevas habilidades, como <b>Redux</b>, <b>TypeScript</b>, <b>MySQL</b>, <b>Power BI</b>, y <b>Styled Components</b>, entre otras tecnologías.</>}
+              </li>
+            </ul>
           </div>
         </div>
         <div className={styles.educationContainer}>
@@ -57,38 +64,28 @@ const education = ({ id }) => {
                 ? "Maimonides University"
                 : "Universidad Maimonides"}
             </h4>
-            <p className={globalStyles.text}>
-              {language === "en"
-                ? "In the 4 years of this bachelors degree, from which I still have my thesis pending, i´ve learned mostly to design and program responsive websites using tools such as VScode, Github, Trello, Jira, Figma, Adobe (Illustrator, Photoshop and XD), React and Next.js. Also i´ve learned languages such as HTML5, CSS, Javascript and C#"
-                : "En los 4 años de esta licenciatura, de la cual aún tengo mi tesis pendiente, he aprendido principalmente a diseñar y programar sitios web utilizando herramientas como VScode, Github, Trello, Jira, Figma, Adobe (Illustrator, Photoshop y XD), React y Next.js. También he aprendido lenguajes como HTML5, CSS, Javascript y C#."}
-            </p>
-          </div>
-        </div>
-        <div className={styles.educationContainer}>
-          <div>
-            <h3 className={globalStyles.subtitle}>
-              {language === "en"
-                ? "Bachelor of Arts in literature"
-                : "Bachiller en Arte - Literatura"}
-            </h3>
-            <h4>
-              {language === "en"
-                ? "February 2013 - November 2018"
-                : "Febrero 2013 - Noviembre 2018"}
-            </h4>
-          </div>
-
-          <div>
-            <h4>
-            {language === "en"
-                ? "Northlands School"
-                : "Colegio Northlands"}
-              </h4>
-            <p className={globalStyles.text}>
-            {language === "en"
-                ? "Through this years of highschool I had a IGCSE and IB education. Most subjects where in english, having at least 6 years writing and speaking english."
-                : "Durante estos años de secundaria tuve una educación IGCSE e IB. La mayoría de las materias fueron en inglés, teniendo al menos 6 años escribiendo y hablando ingles."}
-            </p>
+            <ul>
+              <li className={globalStyles.text}>
+                {language === "en"
+                  ? <>During the 4 years of this bachelor&apos;s degree, I gained knowledge primarily in <b>designing and programming responsive websites</b>.</>
+                  : <>Durante los 4 años de esta licenciatura, adquirí conocimientos principalmente en <b>diseño y programación de sitios web responsivos</b>.</>}
+              </li>
+              <li className={globalStyles.text}>
+                {language === "en"
+                  ? <>I utilized tools such as <b>VSCode</b>, <b>GitHub</b>, <b>Trello</b>, <b>Jira</b>, <b>Figma</b>, and <b>Adobe software</b> (Illustrator, Photoshop, and XD).</>
+                  : <>Utilicé herramientas como <b>VSCode</b>, <b>GitHub</b>, <b>Trello</b>, <b>Jira</b>, <b>Figma</b>, y <b>software de Adobe</b> (Illustrator, Photoshop y XD).</>}
+              </li>
+              <li className={globalStyles.text}>
+                {language === "en"
+                  ? <>Additionally, I worked with frameworks like <b>React</b> and <b>Next.js</b>.</>
+                  : <>Además, trabajé con frameworks como <b>React</b> y <b>Next.js</b>.</>}
+              </li>
+              <li className={globalStyles.text}>
+                {language === "en"
+                  ? <>I also learned programming languages such as <b>HTML5</b>, <b>CSS</b>, <b>JavaScript</b>, and <b>C#</b>.</>
+                  : <>También aprendí lenguajes de programación como <b>HTML5</b>, <b>CSS</b>, <b>JavaScript</b>, y <b>C#</b>.</>}
+              </li>
+            </ul>
           </div>
         </div>
       </div>

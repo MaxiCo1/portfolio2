@@ -19,7 +19,7 @@ const AllSkills = ({ id }) => {
             ? "Here, I will highlight the different skills used in the development of various portfolio projects."
             : "Aquí destacaré las diferentes habilidades utilizadas en el desarrollo de diversos proyectos del portafolio."}
         </p>
-        <div className={styles.circlesContainer}>
+        {/*<div className={styles.circlesContainer}>
           <div className={styles.insideCirclesContainer}>
             <div className={`${styles.begginer} ${styles.circles}`}/>
             <p className={styles.text}>
@@ -38,69 +38,69 @@ const AllSkills = ({ id }) => {
               {language === "en" ? "Advanced" : "Avanzado"}
             </p>
           </div>
-        </div>
+        </div>*/}
       </div>
       <div className={styles.listContainer}>
         <ul className={styles.list}>
           <li className={styles.listItem}>
             <p className={globalStyles.text}>Typescript</p>
-            <div className={`${styles.begginer} ${styles.circles}`} />
+            {/*<div className={`${styles.begginer} ${styles.circles}`} />*/}
           </li>
           <li className={styles.listItem}>
             <p className={globalStyles.text}>Tailwind</p>
-            <div className={`${styles.begginer} ${styles.circles}`} />
+            {/*<div className={`${styles.begginer} ${styles.circles}`} />*/}
           </li>
           <li className={styles.listItem}>
             <p className={globalStyles.text}>Styled components</p>
-            <div className={`${styles.begginer} ${styles.circles}`} />
+            {/*<div className={`${styles.begginer} ${styles.circles}`} />*/}
           </li>
           <li className={styles.listItem}>
             <p className={globalStyles.text}>C#</p>
-            <div className={`${styles.begginer} ${styles.circles}`} />
+            {/*<div className={`${styles.begginer} ${styles.circles}`} />*/}
           </li>
           <li className={styles.listItem}>
             <p className={globalStyles.text}>MySQL</p>
-            <div className={`${styles.begginer} ${styles.circles}`} />
+            {/*<div className={`${styles.begginer} ${styles.circles}`} />*/}
           </li>
           <li className={styles.listItem}>
             <p className={globalStyles.text}>Docker</p>
-            <div className={`${styles.begginer} ${styles.circles}`} />
+            {/*<div className={`${styles.begginer} ${styles.circles}`} />*/}
           </li>
           <li className={styles.listItem}>
             <p className={globalStyles.text}>Firebase</p>
-            <div className={`${styles.begginer} ${styles.circles}`} />
+            {/*<div className={`${styles.begginer} ${styles.circles}`} />*/}
           </li>
           <li className={styles.listItem}>
             <p className={globalStyles.text}>{language === "en" ? "Rest API use" : "Uso de Rest API"}</p>
-            <div className={`${styles.intermediate} ${styles.circles}`} />
+            {/*<div className={`${styles.intermediate} ${styles.circles}`} />*/}
           </li>
           <li className={styles.listItem}>
             <p className={globalStyles.text}>{language === "en" ? "UX/UI design" : "Diseño UX/UI"}</p>
-            <div className={`${styles.intermediate} ${styles.circles}`} />
+            {/*<div className={`${styles.intermediate} ${styles.circles}`} />*/}
           </li>
           <li className={styles.listItem}>
             <p className={globalStyles.text}>NPM/Yarn</p>
-            <div className={`${styles.begginer} ${styles.circles}`} />
+            {/*<div className={`${styles.begginer} ${styles.circles}`} />*/}
           </li>
           <li className={styles.listItem}>
             <p className={globalStyles.text}>Scrum/Kanban</p>
-            <div className={`${styles.begginer} ${styles.circles}`} />
+            {/*<div className={`${styles.begginer} ${styles.circles}`} />*/}
           </li>
           <li className={styles.listItem}>
             <p className={globalStyles.text}>Unity</p>
-            <div className={`${styles.begginer} ${styles.circles}`} />
+            {/*<div className={`${styles.begginer} ${styles.circles}`} />*/}
           </li>
           <li className={styles.listItem}>
             <p className={globalStyles.text}>Github</p>
-            <div className={`${styles.begginer} ${styles.circles}`} />
+            {/*<div className={`${styles.begginer} ${styles.circles}`} />*/}
           </li>
           <li className={styles.listItem}>
             <p className={globalStyles.text}>PowerBI</p>
-            <div className={`${styles.begginer} ${styles.circles}`} />
+            {/*<div className={`${styles.begginer} ${styles.circles}`} />*/}
           </li>
           <li className={styles.listItem}>
             <p className={globalStyles.text}>Redux</p>
-            <div className={`${styles.begginer} ${styles.circles}`} />
+            {/*<div className={`${styles.begginer} ${styles.circles}`} />*/}
           </li>
         </ul>
       </div>
